@@ -33,7 +33,10 @@ public class EliminarTest {
 
 	@Test
 	public void cuandoeliminaRetornaTrue() {
-		//boolean respuesta = this.dao.deleteById("17940106-3");
+		int inicio = this.dao.findAll().size();
+		this.dao.deleteById("17254553-k");
+		int fin = this.dao.findAll().size();
+		assertTrue("quedan "+fin+" despues de la eliminacion", inicio>fin);
 	}
 
 }
