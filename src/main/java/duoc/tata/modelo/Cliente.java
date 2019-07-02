@@ -20,6 +20,18 @@ public class Cliente {
 	private String celular;
 	
 	
+	
+	
+	
+	public Cliente() {
+	}
+	public Cliente(String rut, String nombres, String apellidos, String email, String celular) {
+		this.rut = rut;
+		this.nombres = nombres;
+		this.apellidos = apellidos;
+		this.email = email;
+		this.celular = celular;
+	}
 	public String getRut() {
 		return rut;
 	}
